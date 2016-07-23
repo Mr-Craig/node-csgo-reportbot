@@ -147,6 +147,8 @@ function sendReport(GC, Client, account_name) {
     }).toBuffer());
 }
 
-process.on("uncaughtException", function(err) {});
+process.on("uncaughtException", function(err) {
+    console.log(err);
+});
 
 console.log("Initializing ReportBot by askwrite...\nCredits: Trololo - Idea");
